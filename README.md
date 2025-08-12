@@ -7,9 +7,24 @@
 [![Xcode](https://img.shields.io/badge/Xcode-15.0+-green.svg)](https://developer.apple.com/xcode/)
 [![Android Studio](https://img.shields.io/badge/Android%20Studio-2023+-yellow.svg)](https://developer.android.com/studio)
 
+> ⚠️ **DEVELOPMENT STATUS: WORK IN PROGRESS** ⚠️
+> 
+> **This project is currently under active development and is NOT ready for production use.**
+> 
+> - 🚧 **iOS Platform**: Basic structure complete, core algorithms in development
+> - 🚧 **Android Platform**: Project setup complete, implementation in progress
+> - 🚧 **Core Features**: Research phase complete, implementation ongoing
+> - 🚧 **Testing**: Limited testing completed, comprehensive testing planned
+> 
+> **Expected Release**: Q2 2025 (Tentative)
+> 
+> *Please note that this is a research project and the current implementation is for development and testing purposes only.*
+
 ## 🎯 Project Overview
 
 MagCode is an innovative cross-technology communication system that enables data transmission between NFC readers and smartphone cameras through magnetic field interference. This technology addresses the limitation of NFC functionality in nearly half of smartphones while maintaining the security and convenience of NFC-based payments.
+
+> **Note**: This project is currently in the research and development phase. The technology has been proven in laboratory conditions, but the mobile applications are still under development.
 
 ## ✨ Key Features
 
@@ -61,12 +76,15 @@ MagCode/
 
 ## 🚀 Getting Started
 
+> ⚠️ **IMPORTANT**: This project is under development and may have incomplete features, bugs, or breaking changes. It's intended for developers and researchers who want to contribute to or study the project.
+
 ### Prerequisites
 
 - **iOS Development**: Xcode 15.0+, macOS 12.0+
 - **Android Development**: Android Studio 2023+, JDK 17+
 - **Git**: For version control
 - **Device**: iPhone or Android device with camera for testing
+- **Patience**: This is a research project with ongoing development
 
 ### Quick Start
 
@@ -211,11 +229,17 @@ For research collaboration and technical questions, please contact the developme
 
 ## 🎯 Development Status
 
+> 🚧 **CURRENT STATUS**: This project is actively being developed and is NOT production-ready.
+
 - **Phase 1**: ✅ Foundation & Architecture (Complete)
-- **Phase 2**: 🔄 Core Image Processing (In Progress)
-- **Phase 3**: ⏳ Data Decoding System (Planned)
-- **Phase 4**: ⏳ Payment Integration (Planned)
-- **Phase 5**: ⏳ Optimization & Testing (Planned)
+- **Phase 2**: 🔄 Core Image Processing (In Progress - ~30% Complete)
+- **Phase 3**: ⏳ Data Decoding System (Planned - Not Started)
+- **Phase 4**: ⏳ Payment Integration (Planned - Not Started)
+- **Phase 5**: ⏳ Optimization & Testing (Planned - Not Started)
+
+**Overall Progress**: ~15% Complete
+**Next Milestone**: Basic stripe detection working on both platforms
+**Estimated Completion**: Q2 2025 (Research and Development Phase)
 
 ## 🌟 Innovation Highlights
 
