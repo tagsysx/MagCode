@@ -259,5 +259,7 @@ For research collaboration and technical questions, please contact the developme
 
 *MagCode: Bridging the gap between NFC and camera-based mobile payments through innovative magnetic field interference technology.*
 
+> **⚠️ DISCLAIMER**: This project is a research prototype and is NOT intended for production use. The technology is experimental and may contain bugs, incomplete features, or security vulnerabilities. Use at your own risk and only for research and development purposes.
+
 *Last Updated: January 2025*
-*Project Status: Cross-Platform Development Ready*
+*Project Status: Research & Development Phase - NOT Production Ready*
