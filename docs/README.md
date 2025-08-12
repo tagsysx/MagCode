@@ -22,6 +22,8 @@ At the heart of MagCode is the harmless magnetic interference on the CMOS image 
 - **Fast Data Transfer**: Achieves maximum throughput of 2.58 kbps
 - **Quick Payment Processing**: Completes data exchange in 1.8 seconds on average
 - **Accessibility**: User-friendly for visually impaired users
+- **Cross-Platform Support**: Native iOS and Android implementations
+- **Unified Experience**: Consistent functionality across both platforms
 
 ## Technical Specifications
 
@@ -33,69 +35,80 @@ At the heart of MagCode is the harmless magnetic interference on the CMOS image 
 ## Development Plan
 
 ### Phase 1: Foundation & Architecture (1-2 weeks)
-- [ ] Create iOS project foundation
-- [ ] Set up project dependencies
-- [ ] Implement camera integration
-- [ ] Design basic UI framework
-- [ ] Establish project structure
+- [x] Create cross-platform project structure
+- [x] Set up iOS project foundation
+- [x] Set up Android project foundation
+- [x] Implement shared algorithms and protocols
+- [x] Establish development workflow
 
 ### Phase 2: Core Image Processing (2-3 weeks)
-- [ ] Implement stripe detection algorithms
-- [ ] Develop image preprocessing capabilities
-- [ ] Integrate OpenCV or Vision Framework
-- [ ] Test stripe recognition accuracy
-- [ ] Optimize image processing performance
+- [ ] Implement stripe detection algorithms on iOS
+- [ ] Implement stripe detection algorithms on Android
+- [ ] Develop cross-platform image preprocessing
+- [ ] Test stripe recognition accuracy on both platforms
+- [ ] Optimize performance for both platforms
 
 ### Phase 3: Data Decoding System (2-3 weeks)
-- [ ] Implement stripe-to-data conversion algorithms
-- [ ] Develop error detection and correction mechanisms
-- [ ] Support multiple data formats
+- [ ] Implement data decoding on iOS
+- [ ] Implement data decoding on Android
+- [ ] Develop cross-platform error correction
 - [ ] Optimize decoding performance
-- [ ] Implement data validation
+- [ ] Ensure consistency between platforms
 
 ### Phase 4: Payment Integration (2-3 weeks)
-- [ ] Integrate Apple Pay
-- [ ] Implement payment processing workflow
-- [ ] Add security verification layers
-- [ ] Test payment functionality
-- [ ] Implement transaction logging
+- [ ] Integrate Apple Pay on iOS
+- [ ] Integrate Google Pay on Android
+- [ ] Implement unified payment protocol
+- [ ] Test payment functionality on both platforms
+- [ ] Implement cross-platform security
 
 ### Phase 5: Optimization & Testing (1-2 weeks)
-- [ ] Performance optimization
-- [ ] User experience improvements
-- [ ] Cross-device compatibility testing
+- [ ] Cross-platform performance optimization
+- [ ] Platform-specific UI/UX improvements
+- [ ] Cross-platform compatibility testing
 - [ ] Bug fixes and refinements
-- [ ] Final testing and validation
+- [ ] Final validation on both platforms
 
 ## Project Structure
 
 ```
 MagCode/
-├── MagCode.xcodeproj/
-├── MagCode/
-│   ├── App/
-│   │   ├── MagCodeApp.swift
-│   │   └── ContentView.swift
-│   ├── Camera/
-│   │   ├── CameraManager.swift
-│   │   └── CameraView.swift
-│   ├── ImageProcessing/
-│   │   ├── StripeDetector.swift
-│   │   ├── ImagePreprocessor.swift
-│   │   └── DataDecoder.swift
-│   ├── Payment/
-│   │   ├── PaymentProcessor.swift
-│   │   └── PaymentView.swift
-│   ├── Models/
-│   │   ├── StripeData.swift
-│   │   └── PaymentData.swift
-│   └── Utils/
-│       ├── Constants.swift
-│       └── Extensions.swift
-├── Resources/
-│   ├── Assets.xcassets/
-│   └── Info.plist
-└── README.md
+├── platforms/              # Platform-specific implementations
+│   ├── ios/               # iOS application (Swift/SwiftUI)
+│   │   ├── MagCode/       # iOS source code
+│   │   └── MagCode.xcodeproj
+│   └── android/           # Android application (Kotlin/Jetpack Compose)
+│       ├── app/           # Android source code
+│       └── build.gradle   # Build configuration
+├── shared/                 # Shared resources and configurations
+│   ├── Package.swift      # Swift Package Manager configuration
+│   ├── algorithms/        # Cross-platform algorithms
+│   └── protocols/         # Protocol specifications
+├── docs/                   # Project documentation
+├── research/               # Research materials and papers
+└── README.md              # Main project overview
+```
+
+### Platform-Specific Structure
+
+#### iOS Platform (`platforms/ios/`)
+```
+MagCode/
+├── App/                   # Application entry point
+├── Camera/                # Camera functionality
+├── ImageProcessing/       # Image processing algorithms
+├── Payment/               # Payment processing
+├── Models/                # Data models
+├── Utils/                 # Utility classes
+└── Resources/             # App resources
+```
+
+#### Android Platform (`platforms/android/`)
+```
+app/src/main/
+├── java/                  # Kotlin/Java source files
+├── res/                   # Android resources
+└── AndroidManifest.xml    # App configuration
 ```
 
 ## Technical Challenges & Solutions
@@ -131,10 +144,25 @@ MagCode/
 
 ## Getting Started
 
+### For iOS Development
 1. Clone the repository
-2. Open `MagCode.xcodeproj` in Xcode
-3. Build and run the project
-4. Grant camera permissions when prompted
+2. Navigate to `platforms/ios/`
+3. Open `MagCode.xcodeproj` in Xcode
+4. Build and run the project
+5. Grant camera permissions when prompted
+
+### For Android Development
+1. Clone the repository
+2. Navigate to `platforms/android/`
+3. Open the project in Android Studio
+4. Build and run the project
+5. Grant camera permissions when prompted
+
+### Cross-Platform Development
+- **Shared Resources**: Algorithms and protocols are defined in `shared/` directory
+- **Consistent Implementation**: Both platforms implement the same core functionality
+- **Platform-Specific Features**: Each platform leverages its native capabilities
+- **Unified Testing**: Ensure consistent behavior across both platforms
 
 ## Contributing
 
