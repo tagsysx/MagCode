@@ -1,5 +1,16 @@
 # MagCode: Cross-Technology Communication for Mobile Payments
 
+> ⚠️ **DEVELOPMENT STATUS: WORK IN PROGRESS** ⚠️
+> 
+> **This project is currently under active development and is NOT ready for production use.**
+> 
+> - 🚧 **Research Phase**: Complete - Technology proven in laboratory
+> - 🚧 **Development Phase**: Ongoing - Mobile applications in development
+> - 🚧 **Testing Phase**: Limited - Comprehensive testing planned
+> - 🚧 **Production**: Not ready - Expected Q2 2025 (Tentative)
+> 
+> *This is a research project intended for developers and researchers.*
+
 ## Project Overview
 
 MagCode is an innovative cross-technology communication system that enables data transmission between NFC readers and smartphone cameras through magnetic field interference. This technology addresses the limitation of NFC functionality in nearly half of smartphones while maintaining the security and convenience of NFC-based payments.
