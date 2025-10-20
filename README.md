@@ -53,7 +53,33 @@ MagCode/
 │   └── protocols/         # Protocol specifications
 ├── docs/                   # Project documentation
 ├── research/               # Research materials and papers
-└── README.md              # This file
+├── README.md              # This file
+└── MageCode+/    # An EAN13 Extension of MagCode
+    ├── platforms/
+    │   └── android/
+    │       ├── app/
+    │       │   ├── src/main/
+    │       │   │   ├── java/…               # Kotlin (Compose)
+    │       │   │   ├── res/…                # Resources
+    │       │   │   └── AndroidManifest.xml
+    │       │   ├── build.gradle.kts
+    │       │   └── proguard-rules.pro
+    │       ├── gradle/… (wrapper)
+    │       ├── settings.gradle.kts
+    │       ├── build.gradle.kts
+    │       ├── gradle.properties
+    │       ├── gradlew / gradlew.bat
+    │       └── (build outputs & large assets are ignored)
+    ├── shared/
+    │   ├── algorithms/
+    │   │   └── ALGORITHMS_OVERVIEW.md
+    │   └── protocols/
+    │       └── PAYMENT_PROTOCOL_SPEC.md
+    ├── docs/
+    │   ├── README.md
+    │   └── QUICK_START.md
+    ├── .gitignore
+    └── README.md
 ```
 
 ## 🔧 Technology Stack
